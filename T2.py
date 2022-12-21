@@ -1,7 +1,16 @@
-a=int(input("please enter first num:"))
-b=int(input("please enter second num:"))
-c=int(input("please enter third num:"))
-if a<b+c and b<a+c and c<a+b:
-    print("You can have a triangle with these sides")
-else:
-    print("errore")
+import random
+
+while True:
+    dice=random.randint(1,6)
+    dice2=random.randint(1,6)
+    a=input("please enter s to start:")
+    if a=="s":
+        print(dice)
+        if dice==6:
+            print("your prize:",dice2)
+            dice3=dice+dice2
+            print("your score is",dice3)
+        else:
+            print("your score is",dice)
+    else:
+        break
